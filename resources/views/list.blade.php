@@ -1,4 +1,3 @@
-<?php phpinfo(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +84,7 @@
 		                @foreach(session('questions') as $question)
 		                    <tr>
 		                        <td>{{ $question['title'] }}</td>
-		                        <td><a href="{{ $question['link'] }}" target="_blank">View Question</a></td>
+		                        <td><a href="{{ $question['link'] }}" target="_blank">Link</a></td>
 		                        <td>{{ date('Y-m-d H:i:s', $question['creation_date']) }}</td>
 		                    </tr>
 		                @endforeach
